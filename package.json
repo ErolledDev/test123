@@ -1,0 +1,46 @@
+{
+  "name": "nextjs-github-markdown-blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.1.0",
+    "framer-motion": "^11.11.10",
+    "gray-matter": "^4.0.3",
+    "next": "^14.2.16",
+    "react": "18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "reading-time": "^1.5.0",
+    "rehype": "^13.0.2",
+    "rehype-highlight": "^7.0.1",
+    "rehype-prism-plus": "2.0.0",
+    "rehype-raw": "^7.0.0",
+    "rehype-sanitize": "6.0.0",
+    "rehype-stringify": "10.0.1",
+    "remark": "15.0.1",
+    "remark-gfm": "4.0.0",
+    "remark-html": "^16.0.1",
+    "remark-parse": "11.0.0",
+    "remark-rehype": "11.1.1",
+    "sharp": "^0.33.5",
+    "unified": "11.0.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/node": "^22.8.4",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3"
+  }
+}
