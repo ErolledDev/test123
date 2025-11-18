@@ -2,17 +2,18 @@
 'use client';
 
 import Link from 'next/link';
-import { 
-  FaGithub, 
-  FaMarkdown, 
-  FaMobile, 
-  FaBolt, 
-  FaSearch, 
+import {
+  FaGithub,
+  FaMarkdown,
+  FaMobile,
+  FaBolt,
+  FaSearch,
   FaImage,
   FaCode,
   FaRocket,
   FaPalette,
-  FaChartLine
+  FaChartLine,
+  FaLock
 } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
@@ -36,6 +37,21 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      {/* Header */}
+      <header className="absolute top-0 w-full z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex justify-end">
+            <Link
+              href="/admin/login"
+              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 bg-white rounded-lg shadow-sm hover:bg-gray-50 transition-colors"
+            >
+              <FaLock />
+              Admin Login
+            </Link>
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0">
@@ -153,14 +169,13 @@ export default function Home() {
             >
               View Demo Blog
             </Link>
-            <a
-              href="https://github.com/Dicklesworthstone/nextjs-github-markdown-blog/blob/main/README.md"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/admin/login"
               className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-lg font-medium rounded-xl text-white hover:bg-blue-500 transition-colors duration-300"
             >
-              Read the Docs
-            </a>
+              <FaLock className="mr-2" />
+              Admin CMS
+            </Link>
           </div>
         </div>
       </div>
